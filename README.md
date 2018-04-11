@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/carousel/php-design-patterns.svg)](https://travis-ci.org/carousel/php-design-patterns)
+[![Build Status](https://travis-ci.org/carousel/the-hub.svg)](https://travis-ci.org/carousel/php-design-patterns)
 
-Collection of OOP design patterns, implemented in PHP.
+Object oriented design patterns in context of business of different business problems. Implemented in PHP.
 
 miroslav.trninic@gmail.com
