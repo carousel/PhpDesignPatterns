@@ -1,8 +1,8 @@
  DESIGN PATTERNS NOTES
- =====================
-
-* object-oriented designs often end up with classes that have no counterparts in the real world
-* strict modeling of the real world leads to a system that reflects today's realities but not necessarily tomorrow's
+ ---------------------
+*   patterns emerged from practice
+*   object-oriented designs often end up with classes that have no counterparts in the real world
+*   strict modeling of the real world leads to a system that reflects today's realities but not necessarily tomorrow's
 * an object may have many types, and widely different objects can share a type.
 * In contrast, an object's type only refers to its interface—the set of requests to which it can respond.
 * An object's interface characterizes the complete set of requests that can be sent to the object
@@ -46,19 +46,26 @@
 *   Creational (class,object)
 *   Structural (class,object)
 *   Behavioral (class,object)
-##By scope (to classes or objects)
+By scope (to classes or objects)
+--------------------------------
 *   class scope (inheritance,static)
 *   object scope (composition,dynamic,run-time)
 
 
-#THREE KIND OF SOFTWARE 
-##Application programs (internal reuse)
-##Toolkits (like subroutine libraries, write the code/call toolkit)
-##Frameworks (design reuse over code reuse,reuse the framework/call the code,inversion of control)
+THREE KIND OF SOFTWARE 
+=======================
+Application programs (internal reuse)
+-
+Toolkits (like subroutine libraries, write the code/call toolkit)
+-
+Frameworks (design reuse over code reuse,reuse the framework/call the code,inversion of control)
+-
 
-##CREATIONAL (Creational patterns become important as systems evolve to depend more on object composition than class inheritance)
-##A class creational pattern uses inheritance to vary the class that's instantiated, whereas an object creational pattern will delegate instantiation to another object.
-###Abstract Factory
+CREATIONAL (Creational patterns become important as systems evolve to depend more on object composition than class inheritance)
+=
+*   A class creational pattern uses inheritance to vary the class that's instantiated, whereas an object creational pattern will delegate instantiation to another object.
+Abstract Factory
+-
 *   Provide an interface for creating families of related or dependent objects without specifying their concrete classes
 *   Clients manipulate instances through their abstract interfaces
 *   Participants (Abstract/ConcreteFactory, Abstract/ConcreteProduct,Client)
@@ -68,27 +75,33 @@
 *   Encapsulate creation process (hidden from client)
 *   Required subclassing
 *   Client is calling subclass (which encapsulate instantiation of objects)
-###Factory method
+Factory method
+-
 *   the difference is that the intended purpose of the class containing a factory method is not to create objects, while an abstract factory should only be used to create objects.
 *   Define an interface for creating an object, but let subclasses decide which class to instantiate
 *   Participants (ProductInterface/ConcreteProduct, Abstract/ConcreteProduct,Client)
 *   Similar to abstract factory 
 *   Subclass has more freedom (what to instantiate)
 *   Choice is given to client
-###Builder
+Builder
+-
 *   Separate the construction of a complex object from its representation so that the same construction process can create different representations
 *   Build object in steps
 *   Director and builder
 *   Builder is calling dependente object (what to build)
 *   Director is calling builder
 *   Client is calling director
-###Singleton
+Singleton
+-
 *   Ensure a class has only one instance, and provide a global point of access to it
-###Prototype 
+Prototype 
+-
 *   __clone to other slot of memory,delegation
 
-##STRUCTURAL(compositional, logic internal to the structure, wrappers)
-###Adapter (known as wrapper)
+STRUCTURAL(compositional, logic internal to the structure, wrappers)
+=
+Adapter (known as wrapper)
+-
 *   convert interface into one that clients expect (for one or many objects)
 *   different interface from wrapped class(derived)
 *   exposes only releveant methods to client
@@ -98,7 +111,8 @@
 *   Wrapper for dependency object
 *   Client calls wrapper methods which forwards to adapted code
 *   Not transparent to client
-###Decorator (known as wrapper) 
+Decorator (known as wrapper) 
+-
 *   recursive composition
 *   open ended number of objects
 *   change skin
@@ -118,7 +132,8 @@
 *   alternative to subclassing
 *   must be a subclass of wrapped interface/object
 *   example: grahical embellishment
-###Bridge (handle/body) 
+Bridge (handle/body) 
+-
 *   decouple an abstraction from its implementation so that the two can vary independently (orthogonal)
 *   allow layering
 *   abstraction and implementation can be extended differently
@@ -127,7 +142,8 @@
 *   adapter makes things work before design 
 *   common interface for implementation
 *   bridge make things work after they are designed
-###Proxy 
+Proxy 
+-
 *   only one relationship (static?)
 *   provide a surrogate or placeholder for another object to control access to it
 *   limit access
@@ -135,12 +151,14 @@
 *   same interface as wrapped class
 *   wrapped may not exist
 *   no object in constructor
-###Facade 
+Facade 
+-
 *   provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use
 *   higher level interface (for one or many objects)
 *   different interface,new interface
 *   unidirectional protocol
-###Composite (composite/leaf)
+Composite (composite/leaf)
+-
 *   recursive composition
 *   open ended number of objects
 *   representation
@@ -151,19 +169,23 @@
 *   client use component class interface
 *   composite implements component interface
 *   nearly every user interface toolkit or framework uses a composite (from original Smalltalk MVC view implementation)
-###Flyweight (sharing expensive resources)
+Flyweight (sharing expensive resources)
+-
 *   use sharing to support large numbers of fine-grained objects efficiently
 *   share what is common (intrinsic)
 *   extrinsic
 *   Flyweight context
 
-##BEHAVIORAL (decompositional, external to structure, sender/receiver,find what varies and encapsulate it)
-###Chain of responsibility(multiple handlers for request/next)
+BEHAVIORAL (decompositional, external to structure, sender/receiver,find what varies and encapsulate it)
+=
+Chain of responsibility(multiple handlers for request/next)
+-
 *   avoid coupling the sender of a request to receiver by giving more then one object change to handle request
 *   pass the object along the chain
 *   successor reference
 *   open ended number of objects
-###Command 
+Command 
+-
 *   encapsulate request as object (known as action/transaction)
 *   request is object
 *   client sets receiver and insantiate command 
@@ -175,10 +197,12 @@
 *   invoker/receiver paradigm
 *   execute command on receiver
 *   undo operation (reverse)
-###Iterator (known as cursor)
+Iterator (known as cursor)
+-
 *   access aggregate object sequentially without exposing internals
 *   iterator and data structure are coupled
-###Mediator 
+Mediator 
+-
 *   encapsulates communication between multiple objects
 *   avoid system looks like monolithic
 *   controlling and coordinating the interactions of a group of objects
@@ -186,18 +210,21 @@
 *   lozalized behavior
 *   replaces many-to-many with one-to-many
 *   mediator encapsulate protocols
-###Memento (known as token)
+Memento (known as token)
+-
 *   bookmark
 *   capture and record objects internal state/for restoring state
 *   snapshot
 *   memento and originator are tightly coupled
-###Observer (known as publish/subscribe)
+Observer (known as publish/subscribe)
+-
 *   define one to many dependency
 *   subject and observer (arent tightly coupled together)
 *   MVC as example(view is observer, model is subject)
 *   query for subject state
 *   push/pull
-###State 
+State 
+-
 *   in a context
 *   transition from state to state (defined by context)
 *   context DELEGATES state specific request to concrete state class
@@ -210,7 +237,8 @@
 *   order of state change
 *   transition to state
 *   vs strategy
-###Strategy (known as policy)
+Strategy (known as policy)
+-
 *   delegation?
 *   vs state
 *   interchangeable algorithms
@@ -218,13 +246,15 @@
 *   change guts
 *   code to an interface (different algorithm implementation?)
 *   key is to design interfaces for strategy and its context
-###Template Method (algorithm skeleton in a base class)
+Template Method (algorithm skeleton in a base class)
+-
 *   implement invariant part of algorithm
 *   localize common behavior
 *   fundamental method for code reuse
 *   used in frameworks
 *   "the Hollywood principle," that is, "Don't call us, we'll call you"
-###Visitor (define new operation without changing classes/recursive structure)
+Visitor (define new operation without changing classes/recursive structure)
+-
 *   operation on elements of structure
 *   "accepts" the visitor
 *   makes adding new operations easy
@@ -253,8 +283,43 @@
 ##Different analysis often require same kind of traversal
 
 
-#UML
+UML
+-
 *   dependency
 *   association (related,not dependent)
 *   aggregation/composition (has)
 *   inheritance
+
+Important patterns concepts
+-
+*   client (interface)
+*   intent
+*   naming
+
+
+Creational
+-
+*   abstract factory (general factory concept)
+*   factory method   (general factory concept)
+*   singleton (reference to same object)
+*   builder (car factory)
+Structural
+-
+*   adapter (power socket)
+*   decorator (enhancement instead of object creation)
+*   facade (organize complex event)
+*   composite (organization hierarchy)
+*   proxy (lawyer)
+*   bridge
+*   flyweight
+Behavioral
+-
+*   chain
+*   command (remote controller)
+*   mediator (protocol)
+*   observer (mailman)
+*   visitor
+*   template (common knowledge for a student)
+*   state
+*   memento
+*   strategy (which sorting algorithm to choose)
