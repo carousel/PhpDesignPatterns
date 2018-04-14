@@ -2,7 +2,7 @@
 
 namespace Creational\FactoryMethod;
 
-class OReillyPHPBook
+class OReillyPHPBook extends AbstractPHPBook
 {
     private $author;
     private $title;
@@ -12,5 +12,13 @@ class OReillyPHPBook
     {
         $this->author = "Rasmus Lerdorf and Kevin Tatroe\n";
         $this->title = "Programming PHP\n";
+    }
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+    public function getTitle()
+    {
+        return $this->title;
     }
 }

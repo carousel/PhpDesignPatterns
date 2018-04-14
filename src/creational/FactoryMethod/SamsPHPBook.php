@@ -2,7 +2,7 @@
 
 namespace Creational\FactoryMethod;
 
-class SamsPHPBook
+class SamsPHPBook extends AbstractPHPBook
 {
     private $author;
     private $title;
@@ -11,5 +11,13 @@ class SamsPHPBook
     {
         $this->author = "Rasmus Lerdorf and Kevin Tatroe\n";
         $this->title = "Programming PHP\n";
+    }
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+    public function getTitle()
+    {
+        return $this->title;
     }
 }
