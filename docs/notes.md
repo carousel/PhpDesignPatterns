@@ -66,9 +66,9 @@ CREATIONAL (Creational patterns become important as systems evolve to depend mor
 *   A class creational pattern uses inheritance to vary the class that's instantiated, whereas an object creational pattern will delegate instantiation to another object.
 Abstract Factory
 -
+*   PARTICIPANTS (ABSTRACT/CONCRETE FACTORY, ABSTRACT/CONCRETE PRODUCT,CLIENT)
 *   Provide an interface for creating families of related or dependent objects without specifying their concrete classes
 *   Clients manipulate instances through their abstract interfaces
-*   Participants (Abstract/ConcreteFactory, Abstract/ConcreteProduct,Client)
 *   the difference is that the intended purpose of the class containing a factory method is not to create objects, while an abstract factory should only be used to create objects.
 *   Create objects at run-time
 *   Expose abstract method factory name (to client) 
@@ -77,9 +77,9 @@ Abstract Factory
 *   Client is calling subclass (which encapsulate instantiation of objects)
 Factory method
 -
+*   PARTICIPANTS (PRODUCT INTERFACE/CONCRETE PRODUCT, ABSTRACT/CONCRETE PRODUCT,CLIENT)
 *   the difference is that the intended purpose of the class containing a factory method is not to create objects, while an abstract factory should only be used to create objects.
 *   Define an interface for creating an object, but let subclasses decide which class to instantiate
-*   Participants (ProductInterface/ConcreteProduct, Abstract/ConcreteProduct,Client)
 *   Similar to abstract factory 
 *   Subclass has more freedom (what to instantiate)
 *   Choice is given to client

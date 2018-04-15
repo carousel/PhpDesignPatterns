@@ -4,7 +4,6 @@ use Behavioral\Chain\BookTopic;
 use Behavioral\Chain\BookSubTopic;
 use Behavioral\Chain\BookSubSubTopic;
 
-
 class ChainTest extends \PHPUnit\Framework\TestCase
 {
     /**
@@ -12,6 +11,7 @@ class ChainTest extends \PHPUnit\Framework\TestCase
      */
     public function setUp()
     {
+        echo " \e[1;31m BEHAVIORAL \e[0m";
         $this->bookTopic = new BookTopic('PHP for Cats', 'Larry Truett');
         $this->bookSubTopic = new BookSubTopic('Advanced MySql', $this->bookTopic);
         $this->bookSubSubTopic = new BookSubSubTopic('DDD', $this->bookSubTopic);

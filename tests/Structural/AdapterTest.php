@@ -7,6 +7,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
 {
     public function setUp()
     {
+        echo "  \e[1;34m STRUCTURAL \e[0m";
         $this->book = new Book("Gamma, Helm, Johnson, and Vlissides", "Design Patterns");
         $this->bookAdapter = new BookAdapter($this->book);
     }

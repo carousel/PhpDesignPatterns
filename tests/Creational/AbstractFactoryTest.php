@@ -1,4 +1,4 @@
-<?php namespace Test\Creational;
+<?php 
 
 use Creational\AbstractFactory\OReillyBookFactory;
 use Creational\AbstractFactory\OReillyMySQLBook;
@@ -31,5 +31,6 @@ class AbstractFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertEquals($this->orielly->makeMySQLBook(), new OReillyMySQLBook());
         $this->assertEquals($this->orielly->makePHPBook(), new OReillyPHPBook);
+        echo "\e[1;32m CREATIONAL \e[0m";
     }
 }
