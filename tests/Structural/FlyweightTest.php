@@ -29,6 +29,7 @@ class FlyweightTest extends \PHPUnit\Framework\TestCase
 
         $this->flyweightBook2 = $this->flyweightFactory->getBook(2);
         $this->assertEquals($this->flyweightFactory->getBooksCount(), 3);
+        echo "      \e[1;44m STRUCTURAL \e[0m";
 
     }
 }

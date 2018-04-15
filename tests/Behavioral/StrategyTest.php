@@ -26,5 +26,6 @@ class StrategyTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertEquals($this->strategyContextC->showBookTitle($this->book), 'PHP FOR CATS');
         $this->assertEquals($this->strategyContextE->showBookTitle($this->book), 'PHP!for!Cats');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

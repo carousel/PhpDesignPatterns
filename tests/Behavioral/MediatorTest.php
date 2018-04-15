@@ -36,5 +36,6 @@ class MediatorTest extends \PHPUnit\Framework\TestCase
 
         $title->setTitleUpperCase();
         $this->assertEquals($title->getTitle(), 'DESIGN PATTERNS');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

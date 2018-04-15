@@ -17,5 +17,3 @@ class BookTitleExclaimDecorator extends BookTitleDecorator
         return $this;
     }
 }
-
-

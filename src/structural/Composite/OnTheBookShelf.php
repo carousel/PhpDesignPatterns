@@ -17,4 +17,3 @@ abstract class OnTheBookShelf
 
     abstract public function removeBook($oneBook);
 }
-

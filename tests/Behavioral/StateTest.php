@@ -40,5 +40,6 @@ class StateTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($this->bookContext2->getBookTitle(), 'PHP?book?title?initial');
         //check correct state instance
         $this->assertInstanceOf( 'Behavioral\State\BookTitleStateQuestionMark',$this->bookContext2->getBookTitleState());
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

@@ -39,4 +39,3 @@ class BookSubSubTopic extends AbstractBookTopic
         $this->title = $title_in;
     }
 }
-

@@ -30,5 +30,6 @@ class FactoryMethodTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertEquals($this->factoryMethod->makePHPBook("oreilly"), new OReillyPHPBook);
         $this->assertEquals($this->factoryMethod->makePHPBook("sams"), new SamsPHPBook);
+        echo "    \e[1;42m CREATIONAL \e[0m";
     }
 }

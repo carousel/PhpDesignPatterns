@@ -11,8 +11,8 @@ class ProxyTest extends \PHPUnit\Framework\TestCase
     public function setUp()
     {
         $this->proxyBookList = new ProxyBookList();
-        $this->firstBook = new Book('LARRY TRUETT','PHP for Cats');
-        $this->secondBook = new Book('Larry Truett','PHP for Cats');
+        $this->firstBook = new Book('LARRY TRUETT', 'PHP for Cats');
+        $this->secondBook = new Book('Larry Truett', 'PHP for Cats');
     }
 
     /**
@@ -44,6 +44,6 @@ class ProxyTest extends \PHPUnit\Framework\TestCase
         $this->proxyBookList->removeBookList();
         $this->proxyBookList->removeBook($firstBook);
         $this->assertEquals($this->proxyBookList->getBookCount(), 0);
-
+        echo "      \e[1;44m STRUCTURAL \e[0m";
     }
 }

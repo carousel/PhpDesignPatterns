@@ -11,7 +11,6 @@ class ChainTest extends \PHPUnit\Framework\TestCase
      */
     public function setUp()
     {
-        echo " \e[1;31m BEHAVIORAL \e[0m";
         $this->bookTopic = new BookTopic('PHP for Cats', 'Larry Truett');
         $this->bookSubTopic = new BookSubTopic('Advanced MySql', $this->bookTopic);
         $this->bookSubSubTopic = new BookSubSubTopic('DDD', $this->bookSubTopic);
@@ -44,5 +43,6 @@ class ChainTest extends \PHPUnit\Framework\TestCase
         $this->bookSubSubTopic->setTitle('BookSubSubTopic title');
         $this->assertEquals($this->bookSubSubTopic->getTitle(), 'BookSubSubTopic title');
         $this->assertEquals($this->bookSubSubTopic->getTopic(), 'DDD');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

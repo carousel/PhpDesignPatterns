@@ -39,5 +39,6 @@ class CommandTest extends \PHPUnit\Framework\TestCase
         callCommand($starsOff);
         $this->assertEquals($this->book->getTitle(), 'Design Patterns');
         $this->assertEquals($this->book->getAuthorAndTitle(), 'Design Patterns by Gamma, Helm, Johnson, and Vlissides');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

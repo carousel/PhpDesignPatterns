@@ -45,5 +45,6 @@ class CompositeTest extends \PHPUnit\Framework\TestCase
         $booksCount = $this->books->removeBook($this->thirdBook);
         $booksCount = $this->books->removeBook($this->firstBook);
         $this->assertEquals($booksCount, 1);
+        echo "      \e[1;44m STRUCTURAL \e[0m";
     }
 }

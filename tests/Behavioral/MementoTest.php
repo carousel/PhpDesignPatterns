@@ -30,5 +30,6 @@ class MementoTest extends \PHPUnit\Framework\TestCase
         $this->bookMark->getPage($this->bookReader);
         $this->assertEquals($this->bookReader->getPage(),'103');
         $this->bookMark->getTitle($this->bookReader);
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

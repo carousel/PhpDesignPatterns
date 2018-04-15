@@ -33,5 +33,6 @@ class ObserverTest extends \PHPUnit\Framework\TestCase
         $this->patternGossiper->detach($this->patternGossipFan);
         $this->patternGossiper->updateFavorites('abstract factory, observer, paisley');
         $this->assertEquals($this->patternGossiper->getFavorites(), 'abstract factory, observer, paisley');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

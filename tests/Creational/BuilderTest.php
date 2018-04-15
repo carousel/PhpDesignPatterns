@@ -23,5 +23,6 @@ class BuilderTest extends \PHPUnit\Framework\TestCase
         $this->pageDirector->buildPage();
         $this->page = $this->pageDirector->getPage();
         $this->assertTrue($this->page instanceof HTMLPage);
+        echo "      \e[1;42m CREATIONAL \e[0m";
     }
 }

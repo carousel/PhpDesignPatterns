@@ -36,5 +36,6 @@ class DummyTest extends \PHPUnit\Framework\TestCase
     public function adapter()
     {
         $this->assertEquals('Starting', $this->car->engine->start());
+        echo "      \e[1;45m DUMMY      \e[0m";
     }
 }

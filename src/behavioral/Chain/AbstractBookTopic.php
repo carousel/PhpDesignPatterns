@@ -10,4 +10,3 @@ abstract class AbstractBookTopic
 
     abstract public function setTitle($title_in);
 }
-

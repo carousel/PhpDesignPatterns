@@ -35,6 +35,7 @@ class VisitorTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($this->fancyVisitor->getDescription(), 'Design Patterns...!*@*! written !*! by !@! Gamma, Helm, Johnson and Vlissides');
         $this->acceptVisitor($this->software, $this->fancyVisitor);
         $this->assertEquals($this->fancyVisitor->getDescription(), 'Zend Studio...!!! made !*! by !@@! Zend Technologies...www website !**! at http://www.zend.com');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
     //double dispatch any visitor and visitee objects
     public function acceptVisitor($visitee_in, $visitor_in)

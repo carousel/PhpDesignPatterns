@@ -21,5 +21,6 @@ class BridgeTest extends \PHPUnit\Framework\TestCase
         $book = new BridgeBookTitleAuthor('Larry Truett', "PHP for Cats", 'STARS');
         $this->assertEquals($book->showAuthor(), "Larry*Truett");
         $this->assertEquals($book->showAuthorTitle(), "Larry*Truett's PHP*for*Cats");
+        echo "      \e[1;44m STRUCTURAL \e[0m";
     }
 }

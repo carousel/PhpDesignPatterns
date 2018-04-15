@@ -31,6 +31,6 @@ class AbstractFactoryTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertEquals($this->orielly->makeMySQLBook(), new OReillyMySQLBook());
         $this->assertEquals($this->orielly->makePHPBook(), new OReillyPHPBook);
-        echo "\e[1;32m CREATIONAL \e[0m";
+        echo "    \e[1;42m CREATIONAL \e[0m";
     }
 }

@@ -68,5 +68,6 @@ class IteratorTest extends \PHPUnit\Framework\TestCase
         //var_dump($this->booksReverseIterator->hasNextBook());
         $this->booksReverseIterator->resetBooks();
         $this->assertNull($this->booksReverseIterator->getNextBook());
+        echo "  \e[1;41m BEHAVIORAL \e[0m";
     }
 }

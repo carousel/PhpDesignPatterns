@@ -26,5 +26,6 @@ class TemplateMethodTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertEquals($this->templateStars->showBookTitleInfo($this->book), 'PHP*for*Cats by Larry Truett');
         $this->assertEquals($this->templateStars->showBookTitleInfo($this->book1), 'PHP*for*Cats');
+        echo "      \e[1;41m BEHAVIORAL \e[0m";
     }
 }

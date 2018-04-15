@@ -24,5 +24,6 @@ class FacadeTest extends \PHPUnit\Framework\TestCase
         $title = $this->book->getTitle();
         $this->assertEquals($this->book->getTitle(), $title);
         $this->assertEquals($bookTitleReversed, 'dESIGN pATTERNS');
+        echo "      \e[1;44m STRUCTURAL \e[0m";
     }
 }
