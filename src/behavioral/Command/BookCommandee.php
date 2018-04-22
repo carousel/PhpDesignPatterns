@@ -44,6 +44,10 @@ class BookCommandee
         $this->setAuthor(Str_replace('*', ' ', $this->getAuthor()));
         $this->setTitle(Str_replace('*', ' ', $this->getTitle()));
     }
+    public function capitalize()
+    {
+        $this->setTitle(strtoupper($this->title));
+    }
 
     public function getAuthorAndTitle()
     {
