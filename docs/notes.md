@@ -258,6 +258,7 @@ Strategy (known as policy)
 *   key is to design interfaces for strategy and its context
 Template Method (algorithm skeleton in a base class)
 -
+*   delegation to subclass
 *   implement invariant part of algorithm
 *   localize common behavior
 *   fundamental method for code reuse
