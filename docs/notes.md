@@ -187,6 +187,7 @@ BEHAVIORAL (decompositional, external to structure, sender/receiver,find what va
 =
 Chain of responsibility(multiple handlers for request/next)
 -
+*   delegation
 *   avoid coupling the sender of a request to receiver by giving more then one object change to handle request
 *   pass the object along the chain
 *   successor reference
@@ -210,6 +211,7 @@ Iterator (known as cursor)
 *   iterator and data structure are coupled
 Mediator 
 -
+*   delegation
 *   encapsulates communication between multiple objects
 *   avoid system looks like monolithic
 *   controlling and coordinating the interactions of a group of objects
@@ -232,6 +234,7 @@ Observer (known as publish/subscribe)
 *   push/pull
 State 
 -
+*   delegation
 *   in a context
 *   transition from state to state (defined by context)
 *   context DELEGATES state specific request to concrete state class
@@ -246,7 +249,7 @@ State
 *   vs strategy
 Strategy (known as policy)
 -
-*   delegation?
+*   delegation
 *   vs state
 *   interchangeable algorithms
 *   many related classes differ only in their behavior
@@ -262,6 +265,7 @@ Template Method (algorithm skeleton in a base class)
 *   "the Hollywood principle," that is, "Don't call us, we'll call you"
 Visitor (define new operation without changing classes/recursive structure)
 -
+*   delegation
 *   operation on elements of structure
 *   "accepts" the visitor
 *   makes adding new operations easy
