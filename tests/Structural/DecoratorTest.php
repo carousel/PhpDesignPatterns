@@ -15,8 +15,9 @@ class DecoratorTest extends \PHPUnit\Framework\TestCase
         $this->patternBook = new Book("Gamma, Helm, Johnson, and Vlissides", 'Design Patterns');
         $this->decorator = new BookTitleDecorator($this->patternBook);
         $this->starDecorator = new BookTitleStarDecorator($this->decorator);
-        //$this->starDecorator = new BookTitleStarDecorator($this->exclaimDecorator->exclaimTitle());
-        $this->exclaimDecorator = new BookTitleExclaimDecorator($this->starDecorator->starTitle());
+        $this->exclaimDecorator = new BookTitleExclaimDecorator($this->decorator);
+        $this->exclaimStarDecorator = new BookTitleExclaimDecorator($this->starDecorator);
+        $this->starExclaimStarDecorator = new BookTitleStarDecorator($this->exclaimStarDecorator);
     }
 
     /**
@@ -27,8 +28,19 @@ class DecoratorTest extends \PHPUnit\Framework\TestCase
     public function decorator()
     {
         $this->assertEquals($this->decorator->showTitle(), "Design Patterns");
+
+        $this->starDecorator->starTitle();
+        $this->assertEquals($this->starDecorator->showTitle(), "***Design Patterns***");
+
         $this->exclaimDecorator->exclaimTitle();
-        $this->assertEquals($this->exclaimDecorator->showTitle(), "!!!***Design Patterns***!!!");
+        $this->assertEquals($this->exclaimDecorator->showTitle(), "!!!Design Patterns!!!");
+
+        $this->exclaimStarDecorator->exclaimTitle();
+        $this->assertEquals($this->exclaimStarDecorator->showTitle(), "!!!***Design Patterns***!!!");
+
+        $this->starExclaimStarDecorator->starTitle();
+        $this->assertEquals($this->starExclaimStarDecorator->showTitle(), "***!!!***Design Patterns***!!!***");
+
         echo "      \e[1;44m STRUCTURAL \e[0m";
     }
 }

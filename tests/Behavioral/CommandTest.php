@@ -23,20 +23,12 @@ class CommandTest extends \PHPUnit\Framework\TestCase
      */
     public function command()
     {
-        //Client
         $starsOn = new BookStarsOnCommand($this->book);
-
-        //Invoker
-        function callCommand(BookCommand $bookCommand_in)
-        {
-            $bookCommand_in->execute();
-        }
-
-        callCommand($starsOn);
+        $starsOn->execute();
         $this->assertEquals($this->book->getTitle(), 'Design*Patterns');
 
         $starsOff = new BookStarsOffCommand($this->book);
-        callCommand($starsOff);
+        $starsOff->execute();
         $this->assertEquals($this->book->getTitle(), 'Design Patterns');
         $this->assertEquals($this->book->getAuthorAndTitle(), 'Design Patterns by Gamma, Helm, Johnson, and Vlissides');
         echo "      \e[1;41m BEHAVIORAL \e[0m";

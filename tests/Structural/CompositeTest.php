@@ -21,6 +21,10 @@ class CompositeTest extends \PHPUnit\Framework\TestCase
     public function composite()
     {
         //one book and collection of books have same interface
+        $this->firstBook->addBook(new OneBook('Core PHP Programming, First Edition', 'Atkinson and Suraski'));
+        $this->firstBook->addBook(new OneBook('Core PHP Programming, Second Edition', 'Atkinson and Suraski'));
+        $this->firstBook->addBook(new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski'));
+       
         $booksCount = $this->books->addBook($this->firstBook);
         $this->assertEquals($booksCount, 1);
         $firstBookCount = $this->firstBook->getBookCount();
