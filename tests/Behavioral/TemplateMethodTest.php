@@ -12,7 +12,7 @@ class TemplateMethodTest extends \PHPUnit\Framework\TestCase
     public function setUp()
     {
         $this->book = new Book('Larry Truett', 'PHP for Cats');
-        $this->book1 = new Book(null, 'PHP for Cats');
+        $this->book1 = new Book(NULL,'PHP for Cats');
         $this->templateStars = new TemplateStars();
     }
 

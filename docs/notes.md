@@ -102,6 +102,8 @@ STRUCTURAL(compositional, logic internal to the structure, wrappers)
 =
 Adapter (known as wrapper)
 -
+*   level of indirection
+*   reuse old interface
 *   convert interface into one that clients expect (for one or many objects)
 *   different interface from wrapped class(derived)
 *   exposes only releveant methods to client
@@ -113,6 +115,7 @@ Adapter (known as wrapper)
 *   Not transparent to client
 Decorator (known as wrapper) 
 -
+*   level of indirection
 *   recursive composition
 *   open ended number of objects
 *   change skin
@@ -134,6 +137,7 @@ Decorator (known as wrapper)
 *   example: grahical embellishment
 Bridge (handle/body) 
 -
+*   level of indirection
 *   decouple an abstraction from its implementation so that the two can vary independently (orthogonal)
 *   allow layering
 *   abstraction and implementation can be extended differently
@@ -144,6 +148,7 @@ Bridge (handle/body)
 *   bridge make things work after they are designed
 Proxy 
 -
+*   level of indirection
 *   only one relationship (static?)
 *   provide a surrogate or placeholder for another object to control access to it
 *   limit access
@@ -151,6 +156,7 @@ Proxy
 *   same interface as wrapped class
 *   wrapped may not exist
 *   no object in constructor
+*   only one relationship
 Facade 
 -
 *   provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use
