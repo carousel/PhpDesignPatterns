@@ -4,7 +4,7 @@ namespace Structural\Adapter;
 
 use Helpers\Book;
 
-class BookAdapter extends BookAdapterTarget
+class BookAdapter implements BookAdapterTarget
 {
     private $book;
 

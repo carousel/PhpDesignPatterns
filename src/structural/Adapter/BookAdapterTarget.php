@@ -2,7 +2,7 @@
 
 namespace Structural\Adapter;
 
-abstract class BookAdapterTarget
+interface BookAdapterTarget
 {
-    abstract public function getAuthorAndTitle();
+    public function getAuthorAndTitle();
 }

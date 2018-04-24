@@ -6,7 +6,7 @@ namespace Structural\Bridge;
  * Class BridgeBook
  * @package Structural\Bridge
  */
-abstract class BridgeBook
+class BridgeBook
 {
     private $bbAuthor;
     private $bbTitle;
