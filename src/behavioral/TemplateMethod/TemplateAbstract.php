@@ -26,7 +26,6 @@ abstract class TemplateAbstract
      *the primitive operation
      * this function must be overridded
      */
-    abstract public function processTitle($title);
-
-    abstract public function processAuthor($author);
+    abstract protected function processTitle($title);
+    abstract protected function processAuthor($author);
 }
