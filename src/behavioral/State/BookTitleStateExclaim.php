@@ -10,7 +10,7 @@ class BookTitleStateExclaim implements BookTitleStateInterface
     {
         $title = $context_in->getBook()->getTitle();
         $context_in->setTitleState(new BookTitleStateQuestionMark());
-        return Str_replace(' ', '!', $title);
+        return str_replace(' ', '!', $title);
     }
 }
 

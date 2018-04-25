@@ -239,7 +239,7 @@ State
 *   transition from state to state (defined by context)
 *   context DELEGATES state specific request to concrete state class
 *   The State pattern puts each branch of the conditional in a separate class.
-*   context is primary interface for client
+*   CONTEXT IS PRIMARY INTERFACE FOR CLIENT
 *   delegation (context to state)
 *   finite numbet of states
 *   change behaviour depending on state

@@ -11,6 +11,6 @@ class BookTitleStateStars implements BookTitleStateInterface
         //$title = $context_in->getBook()->getTitle();
         $title = $context_in->getInitialState();
         $context_in->setTitleState(new BookTitleStateExclaim);
-        return Str_replace(' ', '*', $title);
+        return str_replace(' ', '*', $title);
     }
 }
