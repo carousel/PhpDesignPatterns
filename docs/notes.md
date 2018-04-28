@@ -339,5 +339,5 @@ Behavioral
 
 Structural vs behavioral
 -
-*   structural (larger structures)
+*   structural (larger structures, more objects/classes)
 *   behavioral (communication/ think about interfaces/methods)
