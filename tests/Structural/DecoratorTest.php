@@ -16,6 +16,7 @@ class DecoratorTest extends \PHPUnit\Framework\TestCase
         $this->decorator = new BookTitleDecorator($this->patternBook);
         $this->starDecorator = new BookTitleStarDecorator($this->decorator);
         $this->exclaimDecorator = new BookTitleExclaimDecorator($this->decorator);
+
         $this->exclaimStarDecorator = new BookTitleExclaimDecorator($this->starDecorator);
         $this->starExclaimStarDecorator = new BookTitleStarDecorator($this->exclaimStarDecorator);
     }

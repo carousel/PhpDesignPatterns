@@ -7,10 +7,10 @@ class CompositeTest extends \PHPUnit\Framework\TestCase
 {
     public function setUp()
     {
-        $this->firstBook = new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
-        $this->secondBook = new OneBook('PHP Bible', 'Converse and Park');
-        $this->thirdBook = new OneBook('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
-        $this->books = new SeveralBooks();
+        $this->firstBook  =  new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
+        $this->secondBook =  new OneBook('PHP Bible', 'Converse and Park');
+        $this->thirdBook  =  new OneBook('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
+        $this->books      =  new SeveralBooks();
     }
 
     /**
@@ -42,7 +42,7 @@ class CompositeTest extends \PHPUnit\Framework\TestCase
         $this->assertFalse($this->thirdBook->addBook($this->firstBook));
         $this->assertFalse($this->thirdBook->removeBook($this->firstBook));
         $this->assertFalse($this->thirdBook->getBookInfo(112));
-        $this->assertEquals($this->books->getBookInfo(1),'Core PHP Programming, Third Edition by Atkinson and Suraski');
+        $this->assertEquals($this->books->getBookInfo(1), 'Core PHP Programming, Third Edition by Atkinson and Suraski');
         $this->assertFalse($this->books->getBookInfo(123));
         $this->assertEquals($thirdBookCount, 1);
 

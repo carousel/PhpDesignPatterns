@@ -335,3 +335,9 @@ Behavioral
 *   state
 *   memento
 *   strategy (which sorting algorithm to choose)
+
+
+Structural vs behavioral
+-
+*   structural (larger structures)
+*   behavioral (communication/ think about interfaces/methods)
