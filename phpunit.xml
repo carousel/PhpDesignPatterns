@@ -6,7 +6,9 @@
          stopOnFailure="false">
     <testsuites>
         <testsuite name="PHP Patterns Tests">
-            <directory>./tests</directory>
+            <directory>./src/creational/*/test/</directory>
+            <directory>./src/structural/*/test/</directory>
+            <directory>./src/behavioral/*/test/</directory>
         </testsuite>
     </testsuites>
     <filter>

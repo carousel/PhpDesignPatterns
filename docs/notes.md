@@ -1,6 +1,6 @@
 #DESIGN PATTERNS NOTES
 *   patterns emerged from practice
-*   object##oriented designs often end up with classes that have no counterparts in the real world
+*   object oriented designs often end up with classes that have no counterparts in the real world
 *   strict modeling of the real world leads to a system that reflects today's realities but not necessarily tomorrow's
 *   an object may have many types, and widely different objects can share a type.
 *   In contrast, an object's type only refers to its interface—the set of requests to which it can respond.
@@ -23,13 +23,13 @@
 *   Delegation is a way of making composition as powerful for reuse as inheritance (self)
 *   Delegation (reference to object)
 *   In delegation, two objects are involved in handling a request: a receiving object delegates operations to its delegate,which is analogous to subclasses deferring requests to parent classes.
-*   The code structure is frozen at compiletime;
-*   A program's run##time structure consists of rapidly changing networks of communicating objects
+*   The code structure is frozen at compile time;
+*   A program's runtime structure consists of rapidly changing networks of communicating objects
 *   Aggregation implies that an aggregate object and its owner have identical lifetimes.
 *   Aggregation relationships tend to be fewer and more permanent than acquaintance. 
 *   Acquaintances, in contrast, are made and remain more frequently, sometimes existing only for the duration of an operation
-*   The system's run##time structure must be imposed more by the designer than the language.
-*   The run##time structures aren't clear from the code until you understand the patterns.
+*   The system's runtime structure must be imposed more by the designer than the language.
+*   The runtime structures aren't clear from the code until you understand the patterns.
 *   Encapsulating the concept that varies (change without redesign)
 *   Heavy use of object composition can make designs harder to understand.
 *   Since the framework's main contribution to an application is the architecture it defines. Therefore it's imperative to design the framework to be as flexible and extensible as possible.
