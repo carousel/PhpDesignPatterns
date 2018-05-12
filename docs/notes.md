@@ -54,6 +54,7 @@
 *   BEHAVIORAL class patterns use inheritance to describe algorithms and flow of control, whereas the Behavioral object patterns describe how a group of objects cooperate to perform a task that no single object can carry out alone.
 
 ##Most patterns are in object scope
+###Almost every pattern has creational process, structure and behavior
 
 THREE KIND OF SOFTWARE 
 =======================
@@ -359,5 +360,3 @@ Frameworks (design reuse over code reuse,reuse the framework/call the code,inver
     Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. 
 
     
-###Every pattern has one purpose
-###Almost every pattern has creational process, structure and behavior
