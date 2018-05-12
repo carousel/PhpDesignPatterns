@@ -12,6 +12,7 @@ class HTMLPage
     public function __construct()
     {
     }
+
     public function setTitle($title_in)
     {
         $this->page_title = $title_in;

@@ -43,10 +43,12 @@ class ProxyBookList
     {
         $this->bookList = new BookList();
     }
+
     public function removeBookList()
     {
         $this->bookList = null;
     }
+
     public function getAuthor($bookNumber)
     {
         if ($bookNumber == 1) {

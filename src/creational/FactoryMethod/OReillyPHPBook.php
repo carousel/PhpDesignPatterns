@@ -13,10 +13,12 @@ class OReillyPHPBook extends AbstractPHPBook
         $this->author = "Rasmus Lerdorf and Kevin Tatroe\n";
         $this->title = "Programming PHP\n";
     }
+
     public function getAuthor()
     {
         return $this->author;
     }
+
     public function getTitle()
     {
         return $this->title;

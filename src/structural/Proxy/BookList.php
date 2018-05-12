@@ -7,6 +7,7 @@ use Helpers\Book;
 class BookList
 {
     private $books = array();
+
     private $bookCount = 0;
 
     public function getBookCount()

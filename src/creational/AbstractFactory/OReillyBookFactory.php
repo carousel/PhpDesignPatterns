@@ -2,7 +2,6 @@
 
 namespace Creational\AbstractFactory;
 
-
 class OReillyBookFactory extends AbstractBookFactory
 {
     private $context = "OReilly";

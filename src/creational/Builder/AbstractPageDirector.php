@@ -10,6 +10,3 @@ abstract class AbstractPageDirector
 
     abstract public function getPage();
 }
-
-
-
