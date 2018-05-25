@@ -66,6 +66,10 @@ Frameworks (design reuse over code reuse,reuse the framework/call the code,inver
 ##
 
 #CREATIONAL (Creational patterns become important as systems evolve to depend more on object composition than class inheritance)
+##SimpleFactory is a simple factory pattern.
+*   It differs from the static factory because it is not static.
+*   Therefore, you can have multiple factories, differently parameterized, you can subclass it and you can mock it.
+*   It always should be preferred over a static factory!
 ##Abstract Factory
 *   PARTICIPANTS (ABSTRACT/CONCRETE FACTORY, ABSTRACT/CONCRETE PRODUCT,CLIENT)
 *   Provide an interface for creating families of related or dependent objects without specifying their concrete classes
@@ -312,6 +316,10 @@ Frameworks (design reuse over code reuse,reuse the framework/call the code,inver
 #INTENT
 ##Abstract Factory (87) 
     Provide an interface for creating families of related or dependent objects without specifying their concrete classes. 
+##SimpleFactory.
+    It differs from the static factory because it is not static.
+    Therefore, you can have multiple factories, differently parameterized, you can subclass it and you can mock it.
+    It always should be preferred over a static factory!
 ##Factory Method (107) 
     Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. 
 ##Builder (97) 
@@ -359,4 +367,6 @@ Frameworks (design reuse over code reuse,reuse the framework/call the code,inver
 ##Iterator (257) 
     Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. 
 
-    
+## Methods used:
+* get,set,has,update,make,show,add,remove,reset,change
+* build,execute,format,accept,attach,detach,notify,reverse,process,exclaim,star,

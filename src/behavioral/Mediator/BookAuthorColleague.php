@@ -47,6 +47,7 @@ class BookAuthorColleague
         $this->setState('lower');
         $this->getMediator()->change($this);
     }
+
     public function getMediator()
     {
         return $this->mediator;

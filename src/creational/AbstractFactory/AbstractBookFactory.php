@@ -4,6 +4,7 @@ namespace Creational\AbstractFactory;
 
 abstract class AbstractBookFactory
 {
-    abstract public function makePHPBook();
-    abstract public function makeMySQLBook();
+    abstract protected function makePHPBook();
+
+    abstract protected function makeMySQLBook();
 }

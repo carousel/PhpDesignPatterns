@@ -8,6 +8,7 @@ class TemplateStars extends TemplateAbstract
     {
         return Str_replace(' ', '*', $title);
     }
+
     protected function processAuthor($author)
     {
         return $author;

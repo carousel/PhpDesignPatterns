@@ -11,14 +11,17 @@ class BookVisitee extends Visitee
         $this->author = $author_in;
         $this->title  = $title_in;
     }
+
     public function getAuthor()
     {
         return $this->author;
     }
+
     public function getTitle()
     {
         return $this->title;
     }
+
     public function accept(Visitor $visitorIn)
     {
         $visitorIn->visitBook($this);

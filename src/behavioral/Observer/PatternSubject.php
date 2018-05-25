@@ -6,14 +6,17 @@ class PatternSubject extends AbstractSubject
 {
     private $favorites = null;
     private $observers = array();
+
     public function __construct()
     {
     }
+
     public function attach(AbstractObserver $observer_in)
     {
         //could also use array_push($this->observers, $observer_in);
         $this->observers[] = $observer_in;
     }
+
     public function detach(AbstractObserver $observer_in)
     {
         foreach ($this->observers as $okey => $oval) {
