@@ -20,7 +20,8 @@
       "Creational\\": "src/creational",
       "Structural\\": "src/structural",
       "Behavioral\\": "src/behavioral",
-      "Helpers\\": "src/helpers"
+      "Helpers\\": "src/helpers",
+      "Other\\": "src/other"
     }
   },
   "autoload-dev": {

@@ -9,6 +9,7 @@
             <directory>./src/creational/*/test/</directory>
             <directory>./src/structural/*/test/</directory>
             <directory>./src/behavioral/*/test/</directory>
+            <directory>./src/other/*/test/</directory>
         </testsuite>
     </testsuites>
     <filter>
